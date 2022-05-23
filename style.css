@@ -1,0 +1,155 @@
+/*
+Theme Name: Couteau-basque
+Version: 1.0
+Author: CCI
+Description: Thème réalisé durant la formation de la cci de Bayonne
+*/
+
+/* ----------------------general settings --------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+/* container */
+.container{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+/* ----------------------------boutons------------------------ */
+body .wp-block-button__link{
+    border-radius:0;
+    background-color:transparent;
+    border: 1px solid #b28564;
+    color: #b28564;
+    text-transform: uppercase;
+}
+body .wp-block-button__link:hover{
+    border: 1px solid black;
+    color: black;
+}
+
+.plus a{
+    border: none;
+}
+
+/* ----------------------------HEADER---------------------------- */
+
+/* ********************************page header */
+.page-header{
+    width: 100%;
+    height:25rem;
+    /* background-image: url('/img/photo-1-page-daccueil_header.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+/* **************************** navigation */
+nav{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+}
+nav img{
+    height: 5rem;
+    width: auto;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;
+    margin: 10px;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.single-header{
+    background-color: black;
+    color: white;
+}
+
+/* ************************* front-header */
+.front-header{
+    width: 100%;
+    height:42rem;
+    /* background-image: url('/img/photo-1-page-daccueil_header.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+.front-header .header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34rem;
+}
+
+
+/* ************************* header content */
+.header-title{
+color: white;
+font-weight: bold;
+font-size: 2.5rem;
+line-height:3rem;
+letter-spacing: 0.2rem;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+}
+
+/* ------------------------------- footer------------------------- */
+
+footer{
+    position: relative;
+}
+.carte{
+    width: 300px;
+    border: 1px solid black;
+    position: absolute;
+    top:10px;
+    left: 10px;
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+}
+.logo{
+    height: 80px;
+}
+
+/* ************************* style footer menu */
+.menu-mentions-container ul{
+    display: flex;
+    justify-content: center;
+}
+.menu-mentions-container ul li{
+    list-style-type: none;
+    margin: 10px;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.menu-mentions-container ul li a {
+ text-decoration: none;
+ color: white;
+}
