@@ -27,6 +27,9 @@ h2{
 h3{
     font-size: 1.8rem;
 }
+header{
+    margin-bottom: 30px;
+}
 /* ----------------------------boutons------------------------ */
 body .wp-block-button__link{
     border-radius:0;
@@ -61,7 +64,7 @@ nav{
     padding: 1rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
     height: 6rem;
 }
 nav img{
@@ -73,7 +76,7 @@ nav ul{
 }
 nav ul li{
     list-style-type: none;
-    margin: 10px;
+    /* margin: 10px; */
     padding: 1rem;
     font-size: 0.9rem;
 }
@@ -122,6 +125,7 @@ letter-spacing: 0.2rem;
 
 footer{
     position: relative;
+    background-color: black;;
 }
 .carte{
     width: 300px;
@@ -153,3 +157,177 @@ footer{
  text-decoration: none;
  color: white;
 }
+
+/*post cards */
+.container-card{
+    display: flex; 
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+  margin: 10px 0;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card img{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+.card-content {
+    padding: 2px 16px;
+  }
+  .card-link{
+      color: #b28564;
+      text-decoration: none;
+  }
+
+
+.color{
+    height: 80px;
+    width: 80px;
+}
+
+/* single.php */
+.single-container{
+    display: flex;
+
+}
+.single-title{
+    text-align: center;
+}
+.single-year{
+    display: flex;
+    align-items: baseline;
+}
+.single-image, 
+.single-content{
+    width: 50%;
+    margin: auto 0;
+}
+.single-row{
+    display: flex;
+}
+.single-year{
+    width: 30%;
+}
+.single-materiaux{
+    width: 70%;
+}
+.single-logo{
+    width: 80px;
+    height: 80px;
+}
+
+
+/* trois dernières actualité */
+
+/*post cards */
+.container-actualites-card{
+    display: flex; 
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.actualites-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+  margin: 10px 0;
+}
+
+.actualites-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.actualites-card img{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+.actualites-card-content {
+    padding: 2px 16px;
+  }
+  .actualites-card-link{
+      color: #b28564;
+      text-decoration: none;
+  }
+
+  /* link to posts categories */
+
+  .post-categories{
+      display: flex;
+      justify-content: left;
+  }
+  .post-categories li{
+      list-style-type: none;
+      padding: 2px 5px;
+  }
+  .post-categories li a{
+    text-decoration: none;
+  }
+
+  /* sous menus */
+
+  .sub-menu{
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+  }
+  .sub-menu li{
+      background-color: white;
+      padding: 3px;
+      margin: 0;
+      border: 1px solid black;
+  }
+  .sub-menu li a{
+    color: black;
+  }
+
+  .sub-menu{
+      display: none;
+  }
+
+
+  li:hover .sub-menu {
+    /* display: block ;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 75%;
+    left: 0; */
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+      
+
+/* media queries */
+@media screen and (max-width: 964px) {
+    .container{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .container-card,
+    .container-actualites-card{
+        display: flex; 
+        justify-content: between;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .card,
+    .actualites-card {
+      margin: 5px 0;
+      width: 100%;
+    }
+  }
+
+  .video-perso iframe{
+      width: 100%;
+      height: 700px;
+  }
